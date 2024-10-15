@@ -1,0 +1,31 @@
+# LoRAX Model definition
+model: convit_pretrain
+
+# Training setting
+no_amp: false
+eval_every: 10
+
+# Base hyperparameter
+epochs: 50
+base_epochs: 50
+lr: 0.0001
+warmup_lr: 0.0001
+weight_decay: 0.000001
+batch_size: 32
+incremental_batch_size: 32
+incremental_lr: 0.0005
+rehearsal: icarl_all
+
+# Divergence head to get diversity
+head_div: 0.1
+head_div_mode: tr
+
+# Set number of exemplars
+memory_size: 500
+
+# Set LoRAX hyperparameters (rank and adapter combination)
+#adapter combination
+reg: r".*\.attn.qkv|.*\.attn.qk|.*\.attn.v|\.attn\.pos_proj|\.attn\.proj"
+
+#rank value
+r_param: 64
