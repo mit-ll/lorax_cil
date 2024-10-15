@@ -6,7 +6,7 @@
 
 # Installation
 
-Follow the instructions in [installation.md](https://llcad-github.llan.ll.mit.edu/T4CIO-Personas/lorax_cil/blob/main/installation.md).
+Follow the instructions in [installation.md](https://github.com/mit-ll/lorax_cil/blob/main/installation.md).
 
 # Data scenarios 
 The CDDB dataset can be downloaded from the repository here: https://github.com/Coral79/CDDB/tree/main?tab=readme-ov-file
